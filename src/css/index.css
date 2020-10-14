@@ -1,0 +1,106 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: wheat;
+}
+
+.container {
+
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.cell {
+    display: inline-flex;
+    width: 200px;
+    height: 200px;
+    background-color: grey;
+    border-style: groove;
+    border-color: black;
+    margin: 1px;
+    
+}
+
+.cell:hover {
+
+    border-color: white; 
+}
+
+
+.top-left {
+
+    border-top-left-radius: 100%;
+    background-color: green;
+
+}
+
+.top-left-active {
+    
+    border-top-left-radius: 100%;
+    background-color: yellowgreen;
+}
+
+.top-right {
+
+    border-top-right-radius: 100%;
+    background-color: red;
+}
+
+.top-right-active {
+    
+    border-top-right-radius: 100%;
+    background-color: lightcoral;
+}
+
+.bottom-left {
+
+    border-bottom-left-radius: 100%;
+    background-color: blue;
+}
+
+.bottom-left-active {
+
+    border-bottom-left-radius: 100%;
+    background-color: lightseagreen;
+}
+
+.bottom-right {
+
+    border-bottom-right-radius: 100%;
+    background-color: yellow;
+}
+
+.bottom-right-active {
+
+    border-bottom-right-radius: 100%;
+    background-color: lightyellow;
+}
+
+
+.center {
+
+    display: flex;
+    transform: translateX(-310px);
+}
+
+.circle {
+
+    width: 200px;
+    height: 200px;
+    background-color: grey;
+    border-radius: 100%;
+    
+}
+
+button {
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    background-color: black;
+    color: white;
+
+    justify-content: center;
+    align-items: center;
+    transform: translateX(-150px) translateY(50px);
+}
