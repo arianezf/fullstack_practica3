@@ -4,7 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "parcel src/index.html"
+    "dev": "parcel src/index.html",
+    "build": "parcel build src/index.html -d build --public-url /fullstack_practica3/",
+    "deploy": "parcel gh-pages -d build",
+    "clean": "rm -rf dist package-lock.json node_modules"
   },
   "repository": {
     "type": "git",
@@ -26,6 +29,7 @@
     "eslint-plugin-prettier": "^3.1.4",
     "eslint-plugin-promise": "^4.2.1",
     "eslint-plugin-standard": "^4.0.1",
+    "gh-pages": "^3.1.0",
     "parcel-bundler": "^1.12.4",
     "prettier": "^2.1.2"
   }
