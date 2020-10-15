@@ -6,8 +6,8 @@
   "scripts": {
     "dev": "parcel src/index.html",
     "build": "parcel build src/index.html -d build --public-url /fullstack_practica3/",
-    "deploy": "parcel gh-pages -d build",
-    "clean": "rm -rf dist package-lock.json node_modules"
+    "deploy": "gh-pages -d build",
+    "clean": "rm -rf dist package-lock.json build .cache"
   },
   "repository": {
     "type": "git",
@@ -21,7 +21,7 @@
   },
   "homepage": "https://github.com/arianezf/fullstack_practica3#readme",
   "devDependencies": {
-    "eslint": "^7.10.0",
+    "eslint": "^7.11.0",
     "eslint-config-prettier": "^6.12.0",
     "eslint-config-standard": "^14.1.1",
     "eslint-plugin-import": "^2.22.1",

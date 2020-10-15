@@ -7,19 +7,35 @@ body {
 
 .container {
 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 500px;
+    height: 500px;
+    background-color:  rgb(48, 47, 47);
+    border-radius: 100%;
+    
+
+    box-shadow: 
+        inset -31px -30px 101px black,
+        inset 3px 6px 10px rgba(255, 255, 255, 0.959);
+    
+}
+
+.border {
     display: grid;
     grid-template-columns: 50% 50%;
 }
 
 .cell {
-    display: inline-flex;
+   
     width: 200px;
     height: 200px;
-    background-color: grey;
     border-style: groove;
     border-color: black;
     margin: 1px;
-    
+
 }
 
 .cell:hover {
@@ -30,65 +46,82 @@ body {
 
 .top-left {
 
-    border-top-left-radius: 100%;
+    
+    border-radius: 100% 10% 10%;
+    box-shadow: 
+        inset -8px 5px 2px rgba(0,0,0,0.4),
+        inset 2px 2px 16px rgba(255, 255, 255, 0.959);
     background-color: green;
 
+    
 }
+
+
 
 .top-left-active {
     
     border-top-left-radius: 100%;
-    background-color: yellowgreen;
+    background-color: #00ff00;
 }
 
 .top-right {
 
-    border-top-right-radius: 100%;
-    background-color: red;
+    border-radius: 10% 100% 10% 10%;
+    box-shadow: 
+        inset 5px 8px 2px rgba(0,0,0,0.4),
+        inset -2px 2px 16px rgba(255, 255, 255, 0.959);
+    background-color: #cd071e;
 }
 
 .top-right-active {
     
     border-top-right-radius: 100%;
-    background-color: lightcoral;
+    background-color: red;
+   
 }
 
 .bottom-left {
 
-    border-bottom-left-radius: 100%;
-    background-color: blue;
+    border-radius: 10% 10% 10% 100%;
+    box-shadow: 
+        inset 8px 5px 2px rgba(0,0,0,0.4),
+        inset 2px -2px 16px rgba(255, 255, 255, 0.959);
+    background-color: #6958f0;
 }
 
 .bottom-left-active {
 
     border-bottom-left-radius: 100%;
-    background-color: lightseagreen;
+    background-color: blue;
 }
 
 .bottom-right {
 
-    border-bottom-right-radius: 100%;
-    background-color: yellow;
+    border-radius: 10% 10% 100% 10%;
+    box-shadow: 
+        inset -8px 5px 2px rgba(0,0,0,0.4),
+        inset -2px -2px 16px rgba(255, 255, 255, 0.959);
+    background-color: rgb(226, 192, 1);
 }
 
 .bottom-right-active {
 
     border-bottom-right-radius: 100%;
-    background-color: lightyellow;
+    background-color:#fff200;
 }
 
 
 .center {
 
     display: flex;
-    transform: translateX(-310px);
+    transform: translateX(-376px);
 }
 
 .circle {
 
-    width: 200px;
-    height: 200px;
-    background-color: grey;
+    width: 250px;
+    height: 250px;
+    background-color: rgb(48, 47, 47);
     border-radius: 100%;
     
 }
@@ -102,5 +135,6 @@ button {
 
     justify-content: center;
     align-items: center;
-    transform: translateX(-150px) translateY(50px);
+    transform: translateX(-175px) translateY(75px);
 }
+
